@@ -1,0 +1,30 @@
+/* Triple Ink Tattoo Bali — Custom Landing Page Styles */
+
+/* Hide Emergent badge */
+#emergent-badge { display: none !important; }
+
+/* Section anchors offset for sticky header */
+section[id] {
+    scroll-margin-top: 70px;
+}
+
+/* Smooth image reveal */
+img {
+    transition: opacity 0.3s ease;
+}
+
+/* All CTA buttons and links use Coolvetica */
+a.rounded-full, button.rounded-full {
+    font-family: 'Coolvetica', sans-serif !important;
+    letter-spacing: 0.05em;
+}
+
+/* WhatsApp green pulse for sticky CTA */
+@keyframes wa-pulse {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.4); }
+    50% { box-shadow: 0 0 0 8px rgba(37, 211, 102, 0); }
+}
+
+.wa-pulse {
+    animation: wa-pulse 2.5s infinite;
+}
